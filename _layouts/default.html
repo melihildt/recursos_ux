@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="site__container">
+
+  <section class="site__info">
+    <nav class="site__nav">
+      <ul>
+        <li><a href="#"><span class="highlight">Algo</span></a></li>
+        <li><a href="#" class="highlight">Algo</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section>
+    {% include header.html %}
+    <main class="site__content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>

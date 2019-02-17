@@ -1,3 +1,12 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+
+
 # Recursos de UX
 
 La idea de este repo es ir subiendo recursos sobre diseño y Experiencia de Usuario del día a día algunos esenciales si pasaste por acá y querés aprender o curioriosear.
