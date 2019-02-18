@@ -435,7 +435,7 @@ h2+h3 {
 @media (max-width: 666px) {
 
     .site__header,
-    .site--footer {
+    .site__footer {
         padding: 2rem;
     }
 }
