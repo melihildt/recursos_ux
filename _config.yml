@@ -10,7 +10,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Recursos UX 
 email: melisahildt@me.com
-description: Selección de recursos y herramientas para aprender, sumegirse y tener a mano sobre diseño de Experiencia de Usuario y otras cosas relacionadas. 
+description: Selección de recursos y herramientas para aprender, sumergirse y tener a mano sobre diseño de Experiencia de Usuario y otras cosas relacionadas. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: melihildt
