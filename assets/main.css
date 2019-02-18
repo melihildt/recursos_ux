@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 :root {
     --azul-oscuro: #0D172C;
     --gris: #FAFAFA;
     --azul-claro: rgba(1, 63, 161, 0.10);
+    --azul: rgba(13,23,44,0.80);
     --mostaza: #F4B761;
+    --lila: #CFC6FF;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -126,13 +127,43 @@ body {
 
 ol,
 ul {
-    list-style: none;
+    list-style: circle;
+    padding: 0;
 }
+
+/*
+li {
+    padding-left: 1.3em;
+}
+
+
+li:before {
+    content: "\f058";
+    /* FontAwesome Unicode 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li 
+    width: 1.3em;
+    /* same as padding-left set on li 
+    font-size: 80%;
+    color: rgba(1,63,161,0.20);
+} 
+*/
 
 blockquote,
 q {
-    quotes: none;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    margin: 16px;
+    background: var(--gris);
+    border-left: 6px solid var(--mostaza);
+    margin: 1.5em 0px;
+    padding: 0.5em 20px;
 }
+
+/*
 
 blockquote:before,
 blockquote:after,
@@ -141,6 +172,7 @@ q:after {
     content: '';
     content: none;
 }
+*/
 
 table {
     border-collapse: collapse;
@@ -167,19 +199,35 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-    margin-bottom: 1rem;
+h5 {
+    margin-bottom: 1.4rem;
     font-family: 'PT Serif', serif;
     font-weight: 700;
     line-height: 1;
 }
 
+h6 {
+    font-size: 90%;
+    color: var(--azul);
+    margin-bottom: 2.5rem;
+    line-height: 1.3;
+}
+
 a {
     font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
-    color: red;
+    color: var(--azul-oscuro);
     text-decoration: none;
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 50%, rgba(244,183,97,0.40) 50%, rgba(244,183,97,0.40) 100%);;
+
+}
+
+a:hover {
+    text-decoration: none;
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 50%, rgba(241,95,97,0.40) 50%, rgba(241,95,97,0.40) 100%);
+}
+
+.site__footer > a {
+    background-image: none;
 }
 
 
@@ -188,7 +236,7 @@ em,
 i {
     font-family: 'PT Sans', sans-serif;
     font-style: italic;
-    background: rgba(241, 95, 97, 0.40);
+    background: var(--lila);
 }
 
 strong,
@@ -222,9 +270,14 @@ h2 {
 }
 
 h3 {
-    text-transform: uppercase;
-    letter-spacing: .15rem;
-    font-size: 125%;
+    font-size: 135%;
+    margin-top: 2.5rem;
+}
+
+h4 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 115%;
+    margin-top: 2.5rem;
 }
 
 h2+h3 {
@@ -299,10 +352,15 @@ h2+h3 {
 .site__nav ul a {
     display: block;
     font-weight: 400;
+    background-image: none;
 }
 
+.link::before{
+    content: none;
+}
 
 .highlight {
+    background-image: none;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     color: var(--azul-oscuro);
@@ -358,6 +416,7 @@ h2+h3 {
     padding-left: 18rem;
     font-family: 'PT Sans', sans-serif;
     background: var(--mostaza);
+    margin-top: 3rem;
 }
 
 @media (min-width: 1000px) {
@@ -411,4 +470,19 @@ h2+h3 {
 hr {
     opacity: 0.2;
     border: 1px solid #0541A2;
+}
+
+.link__footer {
+    font-weight: 900;
+    color: white;
+    background-image: none;
+} 
+
+.link__footer:hover {
+    color: #F15F61;
+    background-image: none;
+} 
+
+.fa-heart, .fa-coffee {
+    color: white;
 }
